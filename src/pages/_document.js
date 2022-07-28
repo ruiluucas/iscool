@@ -13,6 +13,10 @@ function MyDocument() {
           href="https://fonts.googleapis.com/css?family=Roboto"
         />
       </Head>
+      <body>
+        <Main />
+        <NextScript />
+      </body>
     </Html>
   );
 }
