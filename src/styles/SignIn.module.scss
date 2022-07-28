@@ -1,0 +1,20 @@
+.container {
+    background-color: #7A86B6;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 2rem;
+  
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        h2 {
+            color: black;
+            font-weight: 900;
+            font-size: xx-large;
+            text-align: center;
+            line-height: 82px;
+        }
+    }
+}
