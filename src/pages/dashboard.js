@@ -1,17 +1,14 @@
 import Head from "next/head";
 import styles from "../styles/Dashboard.module.scss";
-import { Avatar, Input } from "@chakra-ui/react";
 import {
+  Avatar,
+  Input,
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
-  colorScheme,
   useDisclosure,
-  Button,
 } from "@chakra-ui/react";
 import { useRef } from "react";
 
@@ -99,7 +96,7 @@ export default function DrawerExample() {
           <div className={styles.postRoll}>
             <div className={styles.post}>
               <div className={styles.headerPost}>
-                <h1>Edutech - Concurso de programação</h1>
+                <h1>Edutech - Concurso de programação gdsfbzdbxgdzfg</h1>
                 <div>
                   <h4>TAREFA</h4>
                   <h3>Criado em 21 de Julho de 2022</h3>
@@ -113,6 +110,10 @@ export default function DrawerExample() {
                   <h4>TAREFA</h4>
                   <h3>Criado em 21 de Julho de 2022</h3>
                 </div>
+              </div>
+              <div className={styles.mainPost}></div>
+              <div className={styles.footerPost}>
+                <span className="material-symbols-outlined">mode_comment</span>
               </div>
             </div>
             <div className={styles.post}>

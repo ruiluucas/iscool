@@ -168,12 +168,60 @@
       .post {
         background: #050030;
         height: 233px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         .headerPost {
           background: #12003d;
           height: 21%;
           display: flex;
           flex-wrap: nowrap;
+          align-items: center;
+          justify-content: space-between;
+
+          h1 {
+            margin-left: 13px;
+            width: max-content;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 700;
+          }
+
+          div {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            width: max-content;
+
+            h4 {
+              font-weight: 700;
+              background: #45005b;
+              border-radius: 5px;
+              padding: 5px;
+              margin-left: 5px;
+              font-size: 13px;
+            }
+
+            h3 {
+              margin: 0 13px;
+              font-size: 13px;
+              color: #b0a8c8;
+              white-space: nowrap;
+            }
+          }
+        }
+
+        .mainPost {
+        }
+
+        .footerPost {
+          background: #0b0036;
+          height: 34px;
+          display: flex;
+          align-items: center;
         }
       }
     }
