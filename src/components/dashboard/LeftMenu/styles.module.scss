@@ -1,0 +1,23 @@
+.leftMenu {
+  background: #0b0036;
+  width: 55px;
+  height: calc(100vh - 89px);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+  position: sticky;
+  top: 89px;
+
+  a {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a:hover {
+    background: #1a0043;
+  }
+}

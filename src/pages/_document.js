@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 function MyDocument() {
   return (
-    <Html>
+    <Html lang="pt-br">
       <Head>
         <link
           rel="stylesheet"
