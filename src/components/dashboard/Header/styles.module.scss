@@ -3,6 +3,7 @@
   width: 100vw;
   height: 89px;
   display: grid;
+  z-index: 100;
   grid-template-columns: 1fr 1fr 1fr;
   position: sticky;
   top: 0;

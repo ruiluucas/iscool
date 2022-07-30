@@ -7,11 +7,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-bottom: 1px solid #b0a8c8;
+    border-bottom: 1px solid #230049;
 
     .headerPost {
       background: #12003d;
-      height: 55px;
+      height: 3em;
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
@@ -54,24 +54,77 @@
 
     .mainPost {
       background: #12003d;
+      display: flex;
 
-      p {
-        height: 34px;
-        width: 89%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        color: #b0a8c8;
-        font-size: 13px;
-        line-height: 17px;
-        margin: 3px 13px;
+      .postDataPreview {
+        display: flex;
+        flex-direction: column;
+
+        .user {
+          display: flex;
+          width: 144px;
+          height: 34px;
+          align-items: center;
+          margin-top: 13px;
+          border-radius: 21px;
+
+          .avatar {
+            height: 34px;
+            z-index: 2;
+            width: 34px;
+            margin-right: 5px;
+
+            img {
+              height: 34px;
+              width: 34px;
+            }
+          }
+
+          .userInformation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            p {
+              font-size: 8px;
+              height: 8px;
+              font-weight: 800;
+              margin-bottom: 2px;
+              line-height: 8px;
+              margin: 0;
+              padding: 0;
+            }
+
+            h1 {
+              white-space: nowrap;
+              line-height: 13px;
+              font-size: 13px;
+              font-weight: 700;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+
+        p {
+          height: calc(17px * 5);
+          width: 89%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #b0a8c8;
+          font-size: 13px;
+          line-height: 17px;
+          margin-right: 5px;
+          margin-top: 13px;
+        }
       }
 
       img {
         width: 233px;
-        height: 144px;
-        overflow: hidden;
-        margin: 3px 13px;
+        border-radius: 21px;
+        height: 233px;
+        margin: 0 13px;
       }
     }
 
