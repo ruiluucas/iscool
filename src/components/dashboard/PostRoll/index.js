@@ -17,6 +17,23 @@ export function PostRoll() {
           </div>
 
           <div className={styles.mainPost}>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              erat dui, venenatis id lacus at, pulvinar tristique sem. Aliquam
+              vestibulum orci quis hendrerit facilisis. Fusce maximus iaculis
+              odio et aliquam. Vestibulum pharetra mauris sit amet tincidunt
+              ultricies. Sed lobortis, ex in finibus posuere, neque nibh lacinia
+              urna, sit amet faucibus enim orci eget elit. Quisque dictum mauris
+              accumsan lacus luctus, vel accumsan purus ultrices. Pellentesque
+              tincidunt dui ex. Suspendisse imperdiet, dui ut sodales interdum,
+              ante dui ornare nisl, nec sollicitudin felis mauris ut lacus.
+              Donec sit amet rhoncus ligula. Vestibulum vel erat pellentesque,
+              dapibus lorem sit amet, tempor odio. Quisque vel justo dui. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos. Donec dapibus vitae nisl finibus mattis. In
+              hac habitasse platea dictumst. Sed faucibus at lorem vitae
+              tincidunt. Nam porttitor tortor et ultricies aliquam.
+            </p>
             <img src="https://fluxoconsultoria.poli.ufrj.br/wp-content/uploads/2016/05/photo-1529101091764-c3526daf38fe.jpg" />
           </div>
 
