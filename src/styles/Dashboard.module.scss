@@ -5,8 +5,17 @@
 
   .main {
     display: flex;
+    overflow: hidden;
     flex-wrap: nowrap;
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .main {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
 }

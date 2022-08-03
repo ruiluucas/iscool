@@ -1,5 +1,5 @@
 .postRoll {
-  width: 610px;
+  max-width: 610px;
   height: 100%;
 
   .post {
@@ -19,7 +19,7 @@
 
       h1 {
         margin-left: 13px;
-        width: max-content;
+        width: 233px;
         white-space: nowrap;
         overflow: hidden;
         font-size: 1em;
@@ -116,7 +116,7 @@
           font-size: 13px;
           line-height: 17px;
           margin-right: 5px;
-          margin-top: 13px;
+          margin-top: 5px;
         }
       }
 
@@ -183,6 +183,37 @@
 
       .commentBox:hover {
         background-color: #2e004f;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .postRoll {
+    order: 3;
+    flex-grow: 1;
+    position: relative;
+    left: 55px;
+
+    .post {
+      width: calc(100vw - 55px);
+
+      .headerPost {
+        h1 {
+          width: max-content;
+        }
+      }
+
+      .mainPost {
+        flex-wrap: wrap;
+
+        .postDataPreview {
+          margin: 0 13px;
+        }
+
+        img {
+          height: 144px;
+        }
       }
     }
   }

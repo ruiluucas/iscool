@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  overflow: hidden;
   position: sticky;
   top: 89px;
 
@@ -19,5 +18,11 @@
 
   a:hover {
     background: #1a0043;
+  }
+}
+
+@media (max-width: 768px) {
+  .leftMenu {
+    order: 1;
   }
 }

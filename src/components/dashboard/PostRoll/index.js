@@ -13,7 +13,7 @@ export function PostRoll() {
 
             <div>
               <h4>TAREFA</h4>
-              <h3>Criado em 21 de Julho de 2022</h3>
+              <h3>21/07/2022</h3>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ export function PostRoll() {
           <div className={styles.footerPost}>
             <div className={styles.subjectAndChecked}>
               <h1>GEOGRAFIA</h1>
-              <span class="material-symbols-outlined">done</span>
+              <span className="material-symbols-outlined">done</span>
             </div>
 
             <div className={styles.commentBox}>
