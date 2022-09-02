@@ -1,5 +1,5 @@
 .postRoll {
-  max-width: 610px;
+  flex-grow: 1;
   height: 100%;
 
   .post {
@@ -11,24 +11,35 @@
 
     .headerPost {
       background: #12003d;
-      height: 3em;
+      height: 55px;
+      flex-grow: 1;
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
       justify-content: space-between;
 
-      h1 {
-        margin-left: 13px;
-        width: 233px;
-        white-space: nowrap;
-        overflow: hidden;
-        font-size: 1em;
-        text-overflow: ellipsis;
-        font-weight: 700;
+      .postTitleContainer {
+        h1 {
+          overflow: hidden;
+          white-space: nowrap;
+          margin-left: 21px;
+          width: calc(55vw - 13px);
+          font-size: 1em;
+          text-overflow: ellipsis;
+          font-weight: 700;
+        }
+
+        @media (max-width: 320px) {
+          h1 {
+            width: 144px;
+          }
+        }
       }
 
-      div {
+      .widgetsContainer {
         display: flex;
+        margin-right: 21px;
+        margin-left: 13px;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
@@ -55,10 +66,20 @@
     .mainPost {
       background: #12003d;
       display: flex;
+      flex-wrap: wrap;
+
+      .previewImage {
+        width: calc(100% - 42px);
+        height: 233px;
+        border-radius: 21px;
+        object-fit: cover;
+        margin: 0 21px;
+      }
 
       .postDataPreview {
         display: flex;
         flex-direction: column;
+        margin: 0 21px;
 
         .user {
           display: flex;
@@ -70,7 +91,6 @@
 
           .avatar {
             height: 34px;
-            z-index: 2;
             width: 34px;
             margin-right: 5px;
 
@@ -120,11 +140,14 @@
         }
       }
 
-      img {
-        width: 233px;
-        border-radius: 21px;
-        height: 233px;
-        margin: 0 13px;
+      @media (min-width: 425px) {
+        flex-wrap: nowrap;
+
+        .previewImage {
+          width: 233px;
+          margin-right: 0;
+          height: 233px;
+        }
       }
     }
 
@@ -146,7 +169,7 @@
           padding: 5px;
           border-radius: 5px;
           font-weight: 700;
-          margin-left: 13px;
+          margin-left: 21px;
         }
 
         span {
@@ -161,7 +184,7 @@
       .commentBox {
         display: flex;
         flex-wrap: nowrap;
-        margin-right: 8px;
+        margin-right: 21px;
         padding: 5px;
         border-radius: 5px;
 
@@ -183,37 +206,6 @@
 
       .commentBox:hover {
         background-color: #2e004f;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .postRoll {
-    order: 3;
-    flex-grow: 1;
-    position: relative;
-    left: 55px;
-
-    .post {
-      width: calc(100vw - 55px);
-
-      .headerPost {
-        h1 {
-          width: max-content;
-        }
-      }
-
-      .mainPost {
-        flex-wrap: wrap;
-
-        .postDataPreview {
-          margin: 0 13px;
-        }
-
-        img {
-          height: 144px;
-        }
       }
     }
   }

@@ -1,20 +1,40 @@
+$primary: #0277bd;
+$primary-light: #58a5f0;
+$primary-dark: #004c8c;
+$secondary: #1a237e;
+$secondary-light: #534bae;
+$secondary-dark: #000051;
+$text: #ffffff;
+
 .container {
-  background-color: #7A86B6;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    140deg,
+    $primary 0%,
+    $secondary 35%,
+    $secondary-dark 100%
+  );
   width: 100vw;
   height: 100vh;
   padding: 0 2rem;
+  display: flex;
+  align-items: center;
 
   header {
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     align-items: center;
 
     h2 {
-      color: black;
+      color: $text;
       font-weight: 900;
       font-size: xx-large;
       text-align: center;
       line-height: 82px;
+      padding-left: 21px;
     }
   }
 
@@ -23,25 +43,23 @@
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    
 
     form {
       padding: 1rem;
       text-align: center;
-      color: #c8b6e2;
+      color: $text;
       display: flex;
       flex-direction: column;
       text-decoration: none;
-      border: 3px solid #c8b6e2;
       border-radius: 13px;
       height: 21em;
 
       h2 {
-        margin: 0 0 5px 0;
+        margin: 0 0 8px 0;
         font-size: 1.5rem;
         font-weight: 700;
       }
-      
+
       div {
         display: flex;
         align-items: flex-start;
@@ -68,17 +86,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: none;
 
         label {
           font-weight: 300;
 
           span:checked {
-            background-color: #7A86B6;
+            background-color: #7a86b6;
           }
         }
 
         button {
+          background: $primary;
+        }
+
+        button:hover {
+          background: $primary-light;
         }
       }
     }

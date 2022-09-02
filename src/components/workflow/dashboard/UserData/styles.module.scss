@@ -1,29 +1,76 @@
 .userData {
+  display: flex;
   background: #12003d;
-  height: calc(100vh - 89px);
   flex-grow: 1;
-  position: sticky;
-  top: 89px;
+  height: 233px;
 
   .headerUserData {
     background: #230049;
-    height: 21%;
     display: flex;
+    height: min-content;
     align-items: center;
+    flex-wrap: wrap;
+
+    .user {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 250px;
+      margin: 13px 0;
+      margin-left: 21px;
+
+      .avatar {
+        width: 89px;
+        height: 89px;
+        margin-right: 8px;
+      }
+
+      .userInformation {
+        display: flex;
+        height: max-content;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        p {
+          color: #b0a8c8;
+          font-size: 8px;
+          font-weight: 800;
+          line-height: 8px;
+          margin: 0;
+          padding: 0;
+        }
+
+        h1 {
+          white-space: nowrap;
+          line-height: 21px;
+          font-size: 21px;
+          font-weight: 700;
+          margin-top: 2px;
+          margin-bottom: 3px;
+        }
+
+        h2 {
+          font-size: 13px;
+          color: #d4d2e3;
+        }
+      }
+    }
 
     .intradayData {
       display: flex;
       height: 5em;
+      flex-grow: 1;
       padding: 3px 0;
-      margin: 0 auto;
+      margin: 0 21px;
       align-items: center;
       justify-content: center;
-      background: #45005b;
+      background: #312f31;
       border-radius: 8px;
 
       .currentIntraday {
         background: transparent;
-        height: 100%;
         width: 50%;
         display: flex;
         align-items: center;
@@ -84,11 +131,12 @@
           color: #d4d2e3;
           line-height: 13px;
           font-size: 13px;
+          text-align: center;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
           width: 89%;
-          margin: 2px 0;
+          margin: 2px auto;
         }
       }
     }
@@ -97,11 +145,13 @@
   .mainUserData {
     display: flex;
     justify-content: space-around;
+    flex-grow: 1;
     flex-wrap: wrap;
 
     .absence {
       background: #2980b9;
-      width: 144px;
+      min-width: 89px;
+      width: 21%;
       height: 89px;
       border-radius: 32px;
       display: flex;
@@ -116,7 +166,7 @@
 
       p {
         background: #45005b;
-        padding: 5px 21px;
+        padding: 5px 13px;
         border-radius: 5px;
         font-weight: 900;
         font-size: 21px;
@@ -126,7 +176,8 @@
 
     .attendancePercentage {
       background: #2980b9;
-      width: 144px;
+      width: 21%;
+      min-width: 89px;
       height: 89px;
       border-radius: 32px;
       display: flex;
@@ -141,7 +192,7 @@
 
       p {
         background: #45005b;
-        padding: 5px 21px;
+        padding: 5px 13px;
         border-radius: 5px;
         font-weight: 900;
         font-size: 21px;
@@ -151,7 +202,8 @@
 
     .classroomAmount {
       background: #2980b9;
-      width: 144px;
+      min-width: 89px;
+      width: 21%;
       height: 89px;
       border-radius: 32px;
       display: flex;
@@ -166,22 +218,12 @@
 
       p {
         background: #45005b;
-        padding: 5px 21px;
+        padding: 5px 13px;
         border-radius: 5px;
         font-weight: 900;
         font-size: 21px;
         line-height: 21px;
       }
     }
-  }
-}
-
-@media (max-width: 768px) {
-  .userData {
-    order: 2;
-    height: calc(100vh - 89px);
-    width: calc(100vw - 55px);
-    position: relative;
-    top: 0;
   }
 }

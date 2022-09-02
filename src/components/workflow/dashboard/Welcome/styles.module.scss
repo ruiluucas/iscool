@@ -1,0 +1,124 @@
+.userData {
+  display: flex;
+  background: #12003d;
+  flex-grow: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .headerUserData {
+    background: #230049;
+    display: flex;
+    width: 100%;
+    height: min-content;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+
+    .user {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 250px;
+      margin: 144px 0;
+      width: 89%;
+
+      h1 {
+        line-height: 21vw;
+        font-size: 21vw;
+        font-weight: 900;
+      }
+
+      @media (min-width: 375px) {
+        margin: 55px 0;
+
+        h1 {
+          font-size: 55px;
+          line-height: 55px;
+        }
+      }
+    }
+
+    .intradayData {
+      display: flex;
+      height: 5em;
+      flex-grow: 1;
+      padding: 3px 0;
+      margin: 0 21px;
+      align-items: center;
+      justify-content: center;
+
+      .currentIntraday {
+        background: transparent;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-right: 1px solid #735492;
+
+        .intradayHours {
+          font-size: 21px;
+          line-height: 21px;
+        }
+
+        .day {
+          font-size: 13px;
+          line-height: 13px;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 5px 0;
+
+          span {
+            font-size: 13px;
+            line-height: 13px;
+            margin: 0 2px;
+          }
+
+          p {
+            font-size: 13px;
+            line-height: 13px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .currentSubject {
+        background: transparent;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .subject {
+          font-size: 89%;
+          line-height: 89%;
+          background-color: #2980b9;
+          padding: 5px;
+          border-radius: 5px;
+          font-weight: 700;
+          margin: 0;
+        }
+
+        .themeSubject {
+          color: #d4d2e3;
+          line-height: 13px;
+          font-size: 13px;
+          text-align: center;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 89%;
+          margin: 2px auto;
+        }
+      }
+    }
+  }
+}

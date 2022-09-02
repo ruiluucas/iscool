@@ -1,4 +1,5 @@
 import { Avatar } from "@chakra-ui/react";
+import { useEffect } from "react";
 import styles from "./styles.module.scss";
 
 export function PostRoll() {
@@ -6,19 +7,24 @@ export function PostRoll() {
 
   return (
     <div className={styles.postRoll}>
-      {posts.map(() => (
-        <div className={styles.post}>
+      {posts.map((n) => (
+        <div key={n} className={styles.post}>
           <div className={styles.headerPost}>
-            <h1>Edutech - Concurso de pogrramação gdsfbzdbxgdzfg</h1>
+            <div div className={styles.postTitleContainer}>
+              <h1>Edutech - Concurso de pogrramação gdsfbzdbxgdzfg</h1>
+            </div>
 
-            <div>
+            <div className={styles.widgetsContainer}>
               <h4>TAREFA</h4>
               <h3>21/07/2022</h3>
             </div>
           </div>
 
           <div className={styles.mainPost}>
-            <img src="https://fluxoconsultoria.poli.ufrj.br/wp-content/uploads/2016/05/photo-1529101091764-c3526daf38fe.jpg" />
+            <img
+              className={styles.previewImage}
+              src="https://fluxoconsultoria.poli.ufrj.br/wp-content/uploads/2016/05/photo-1529101091764-c3526daf38fe.jpg"
+            />
             <div className={styles.postDataPreview}>
               <div className={styles.user}>
                 <Avatar
