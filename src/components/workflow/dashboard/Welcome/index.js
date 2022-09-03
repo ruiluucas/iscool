@@ -20,7 +20,6 @@ export function Welcome() {
         });
       }
       setO(displayDate);
-      console.log(o);
     }
   });
 
