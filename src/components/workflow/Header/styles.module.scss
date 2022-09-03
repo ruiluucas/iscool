@@ -1,5 +1,13 @@
+$primary: #0277bd;
+$primary-light: #58a5f0;
+$primary-dark: #004c8c;
+$secondary: #1a237e;
+$secondary-light: #534bae;
+$secondary-dark: #000051;
+$text: #ffffff;
+
 .header {
-  background: #1a0043;
+  background: $primary;
   flex-grow: 1;
   height: 89px;
   display: flex;
@@ -78,6 +86,37 @@
       justify-content: center;
       align-items: center;
       margin: 0 13px;
+    }
+  }
+}
+
+.chakra-modal__content-container .css-1lz89iw {
+  height: 50vh;
+}
+
+.drawerList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+  .user {
+    font-size: x-large;
+    margin-top: 55px;
+  }
+
+  a {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: x-large;
+    margin: 8px 0;
+    font-weight: 800;
+    width: 100%;
+    align-items: center;
+
+    span {
+      height: 24px;
+      width: 24px;
+      margin-right: 13px;
     }
   }
 }

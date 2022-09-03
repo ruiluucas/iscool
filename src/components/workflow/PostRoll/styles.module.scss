@@ -1,16 +1,23 @@
+$primary: #0277bd;
+$primary-light: #58a5f0;
+$primary-dark: #004c8c;
+$secondary: #1a237e;
+$secondary-light: #534bae;
+$secondary-dark: #000051;
+$text: #ffffff;
+
 .postRoll {
   flex-grow: 1;
   height: 100%;
 
   .post {
-    background: #050030;
+    background: $secondary-dark;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-bottom: 1px solid #230049;
 
     .headerPost {
-      background: #12003d;
       height: 55px;
       flex-grow: 1;
       display: flex;
@@ -23,7 +30,7 @@
           overflow: hidden;
           white-space: nowrap;
           margin-left: 21px;
-          width: calc(55vw - 13px);
+          width: calc(55vw - 55px);
           font-size: 1em;
           text-overflow: ellipsis;
           font-weight: 700;
@@ -47,7 +54,7 @@
 
         h4 {
           font-weight: 700;
-          background: #45005b;
+          background: $primary;
           border-radius: 5px;
           padding: 5px;
           margin-left: 5px;
@@ -64,7 +71,6 @@
     }
 
     .mainPost {
-      background: #12003d;
       display: flex;
       flex-wrap: wrap;
 
@@ -152,7 +158,6 @@
     }
 
     .footerPost {
-      background: #12003d;
       height: 89px;
       display: flex;
       justify-content: space-between;

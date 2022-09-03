@@ -15,14 +15,11 @@ export default function Welcome() {
         <header>
           <h2>Iscool</h2>
           <menu>
-            <Link href="/login">
-              <a>SOU PEDAGOGO</a>
+            <Link href="/signin">
+              <a>Registrar</a>
             </Link>
             <Link href="/login">
-              <a>SOU PROFESSOR</a>
-            </Link>
-            <Link href="/login">
-              <a>SOU ALUNO</a>
+              <a>Entrar</a>
             </Link>
           </menu>
         </header>
@@ -32,9 +29,6 @@ export default function Welcome() {
             <br />
             para a sua escola!
           </h1>
-          <Link href="/signin">
-            <a>NOVO POR AQUI? REGISTRE-SE!</a>
-          </Link>
           <p>
             Lorem ipsum dolor sit amet,
             <br />
@@ -45,25 +39,23 @@ export default function Welcome() {
           </p>
         </main>
       </div>
-
-      <div className={styles.container2}>
-        <div>
-          <div>
-            <h2>Documentation</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </div>
-          <div>
-            <h2>Learn</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </div>
-          <div>
-            <h2>Examples</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </div>
-        </div>
-      </div>
       <footer className={styles.footer}>
-        <p>Powered by </p>
+        <div>
+          <ul>
+            <li>
+              <a>Sobre nós</a>
+            </li>
+            <li>
+              <a>Parcerias</a>
+            </li>
+            <li>
+              <a>Ferramentas</a>
+            </li>
+            <li>
+              <a>Ajuda</a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </>
   );

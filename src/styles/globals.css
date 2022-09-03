@@ -8,6 +8,11 @@
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+  width: 100%;
+}
+
+#root {
+  width: 100vw;
 }
 
 .material-symbols-outlined {
@@ -16,17 +21,4 @@ body {
 
 #search-icon {
   font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 48;
-}
-
-body::-webkit-scrollbar {
-  width: 8px; /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: #0b0036; /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #5a2a76; /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
 }

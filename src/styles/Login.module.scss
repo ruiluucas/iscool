@@ -14,7 +14,7 @@ $text: #ffffff;
     $secondary 35%,
     $secondary-dark 100%
   );
-  width: 100vw;
+  flex-grow: 1;
   height: 100vh;
   padding: 0 2rem;
   display: flex;
@@ -72,7 +72,9 @@ $text: #ffffff;
         }
 
         input {
-          width: 21em;
+          min-width: 233px;
+          max-width: calc(987px + 610px);
+          width: 55vw;
           line-height: 2em;
           font-size: 2em;
         }

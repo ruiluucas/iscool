@@ -1,12 +1,19 @@
+$primary: #0277bd;
+$primary-light: #58a5f0;
+$primary-dark: #004c8c;
+$secondary: #1a237e;
+$secondary-light: #534bae;
+$secondary-dark: #000051;
+$text: #ffffff;
+
 .userData {
   display: flex;
-  background: #12003d;
+  background: linear-gradient(180deg, $primary 0%, $secondary-dark 100%);
   flex-grow: 1;
   flex-direction: column;
   flex-wrap: wrap;
 
   .headerUserData {
-    background: #230049;
     display: flex;
     width: 100%;
     height: min-content;
@@ -100,7 +107,7 @@
         .subject {
           font-size: 89%;
           line-height: 89%;
-          background-color: #2980b9;
+          background-color: $secondary-dark;
           padding: 5px;
           border-radius: 5px;
           font-weight: 700;
